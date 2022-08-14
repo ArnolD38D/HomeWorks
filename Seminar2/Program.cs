@@ -48,12 +48,10 @@ int MethodThirdNumber (int number)
 Console.WriteLine ($"The third number from {number} this {ThreeDigit}");
 */
 
-
+/*
 // Задача 15: Напишите программу, которая принимает на вход цифру, 
 // обозначающую день недели, и проверяет, является ли этот день 
 // выходным.
-
-
 
 void day (int number)
 {
@@ -72,6 +70,6 @@ void day (int number)
 Console.Write ("Enter a number indicating the day of the week: ");
 int number = Convert.ToInt32(Console.ReadLine());
 day (number);
-
+*/
 
  
