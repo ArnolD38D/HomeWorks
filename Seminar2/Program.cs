@@ -53,20 +53,25 @@ Console.WriteLine ($"The third number from {number} this {ThreeDigit}");
 // обозначающую день недели, и проверяет, является ли этот день 
 // выходным.
 
-int TheDaysOfTheWeekMethod(int dayNumber);
+
+
+void day (int number)
 {
-    if (dayNumber == 6 || dayNumber == 7)
+    if (number == 6 || number == 7)
     {
-        Console.WriteLine ($"It's a day off");
+        Console.WriteLine ("It's a day off");
     }
-    else
+    else if (number < 1 || number > 7)
     {
-        Console.WriteLine ($"This day is not a day off")
+        Console.WriteLine ("It's not a day of the week");
     }
-    return dayNumber;
+    else Console.WriteLine("It's weekdays");
+    return;
 }
 
 Console.Write ("Enter a number indicating the day of the week: ");
- int number = Convert.ToInt32(Console.ReadLine());
- int IndicatingNumber = TheDaysOfTheWeekMethod(dayNumber);
-Console.WriteLine ($"This number indicates the day of the week, which is {IndicatingNumber}");
+int number = Convert.ToInt32(Console.ReadLine());
+day (number);
+
+
+ 
