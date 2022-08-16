@@ -47,7 +47,7 @@ double DistanceBetweenPoints = DistanceIn3dSpace (Xa, Ya, Za, Xb, Yb, Zb);
 Console.WriteLine ($"Distance is {DistanceBetweenPoints}");
 */
 
-
+/*
 // Задача №23. Напишите программу, которая принимает на вход число (N) 
 // и выдаёт таблицу кубов от 1 до N.
 
@@ -77,3 +77,5 @@ int N = Convert.ToInt32 (Console.ReadLine ());
 int[] arry = new int[N+1];
 cube(arry);
 PrintArry(arry);
+
+*/
