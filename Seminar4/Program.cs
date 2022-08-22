@@ -40,35 +40,27 @@ Console.WriteLine ($"The sum of the numbers in the number N: {SumNumber(numberN)
 /*
 // Задача 29: Напишите программу, которая задаёт массив из 8 элементов 
 // и выводит их на экран.
-*/
 
-            Я НЕ СПРАВИЛСЯ Т.Е. НЕ ЧЕГО НЕПОНЯЛ.
-            
-/*
-int[] CreatArray (int[] size)
+int[] CreateArray (int saze)
 {
-    int[] newArray = new int[size];
-    Console.Write("Enter array element №1: ");
-    int first = Convert.ToInt32(Console.ReadLine());
-    Console.Write("Enter array element №2: ");
-    int second = Convert.ToInt32(Console.ReadLine());
-    Console.Write("Enter array element №3: ");
-    int third = Convert.ToInt32(Console.ReadLine());
-    Console.Write("Enter array element №4: ");
-    int fourth = Convert.ToInt32(Console.ReadLine());
-    Console.Write("Enter array element №5: ");
-    int fifth = Convert.ToInt32(Console.ReadLine());
-    Console.Write("Enter array element №6: ");
-    int sixth = Convert.ToInt32(Console.ReadLine());
-    Console.Write("Enter array element №7: ");
-    int seventh = Convert.ToInt32(Console.ReadLine());
-    Console.Write("Enter array element №8: ");
-    int eight = Convert.ToInt32(Console.ReadLine());
-
+    int[] newArray = new int [saze];
+    for (int i = 0; i < saze; i++)
+    {
+        Console.Write($"Input {i} element of the array: ");
+        newArray [i] = Convert.ToInt32(Console.ReadLine());
+    }
     return newArray;
 }
-Console.Write("Input size for array ");
+void ShowArray (int[] array)
+{
+    for (int i = 0; i < array.Length; i++)
+        Console.Write(array[i] + " ");
+    
+    Console.WriteLine();
+}
+Console.Write ("Input size for array: ");
 int a = Convert.ToInt32(Console.ReadLine());
-int[] MyArray=CreatArray(a);
-Console.WriteLine($"что то это {MyArray}");
+int[] myArray = CreateArray(a);
+ShowArray(myArray);
 */
+
